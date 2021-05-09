@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ServerGroups>
+	    <ServerGroup>
+            <Name>first_half</Name>
+            <Credentials>
+                <UserName>Administrator</UserName>
+                <Password>admin</Password>
+            </Credentials>
+            <Servers>
+                <Server>
+                    <IpAddress>10.0.0.3</IpAddress>
+                </Server>
+                <Server>
+                    <IpAddress>10.0.0.4</IpAddress>
+                </Server>
+            </Servers>
+        </ServerGroup>
+
+	    <ServerGroup>
+            <Name>second_half</Name>
+            <Servers>
+                <Server>
+                    <IpAddress>10.0.0.5</IpAddress>
+                    <!-- Override global system settings -->
+                    <Credentials>
+                            <UserName>Administrator</UserName>
+                            <Password>Admin</Password>
+                    </Credentials>
+                </Server>
+            </Servers>
+        </ServerGroup>
+
+    </ServerGroups>
+</Config>
+
