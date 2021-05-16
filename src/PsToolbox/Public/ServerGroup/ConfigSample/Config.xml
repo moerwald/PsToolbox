@@ -5,7 +5,7 @@
             <Name>first_half</Name>
             <Credentials>
                 <UserName>Administrator</UserName>
-                <Password>admin</Password>
+                <PasswordPlain>admin</PasswordPlain>
             </Credentials>
             <Servers>
                 <Server>
@@ -25,7 +25,15 @@
                     <!-- Override global system settings -->
                     <Credentials>
                             <UserName>Administrator</UserName>
-                            <Password>Admin</Password>
+                            <PasswordPlain>Admin</PasswordPlain>
+                    </Credentials>
+                </Server>
+                <Server>
+                    <IpAddress>10.0.0.6</IpAddress>
+                    <!-- Override global system settings -->
+                    <Credentials>
+                            <UserName>Administrator</UserName>
+                            <PasswordSecure>Admin</SecurePasswordPlain>
                     </Credentials>
                 </Server>
             </Servers>
